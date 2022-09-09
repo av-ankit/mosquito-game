@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import mosquito from "./../assets/mosquito.png";
 import mosquitoScared from "./../assets/mosquito-dead.png";
+import blood from "./../assets/blood splash.png";
 import { Button, Modal } from "react-bootstrap";
 
 function Game() {
@@ -30,7 +31,7 @@ function Game() {
       settop(topValue);
       setleft(leftValue);
       setshowHit(false);
-    }, 600);
+    }, 1000);
 
     setTimeout(() => {
       clearTimeout(time);
@@ -46,17 +47,31 @@ function Game() {
       <div className="score">Score : {count}</div>
       <div className="App-header">
         {showHit ? (
-          <img
-            src={mosquitoScared}
-            className="mosquito"
-            style={{
-              position: "absolute",
-              top: `${top}px`,
-              left: `${left}px`,
-            }}
-            alt="mosquito"
-          />
+          // rendering killed/scared mosquito
+          <div>
+            <img
+              src={blood}
+              className="mosquito"
+              style={{
+                position: "absolute",
+                top: `${top}px`,
+                left: `${left}px`,
+              }}
+              alt="mosquito"
+            />
+            <img
+              src={mosquitoScared}
+              className="mosquito"
+              style={{
+                position: "absolute",
+                top: `${top}px`,
+                left: `${left}px`,
+              }}
+              alt="mosquito"
+            />
+          </div>
         ) : (
+          // rendering normal mosquito
           <img
             onClick={() => {
               setcount(count + 1);

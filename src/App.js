@@ -6,17 +6,13 @@ import Game from "./components/game";
 
 function App() {
   const [showStartModal, setshowStartModal] = useState(true);
-  const [startGame, setstartGame] = useState(false);
   const handleClose = () => {
     setshowStartModal(false);
-    setstartGame(true);
   };
 
-  const stopGame = () => {
-    setstartGame(false);
-  };
   return (
     <div>
+      {/* conditional rendering to show Start Modal or Game */}
       {showStartModal ? (
         <Modal
           show={showStartModal}
@@ -48,7 +44,7 @@ function App() {
           </Modal.Footer>
         </Modal>
       ) : (
-        <Game startGame={startGame} stopGame={stopGame} />
+        <Game />
       )}
     </div>
   );
