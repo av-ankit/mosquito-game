@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/mosquito-game/static/css/main.c225f113.css",
-    "main.js": "/mosquito-game/static/js/main.93c390a2.js",
+    "main.js": "/mosquito-game/static/js/main.da290344.js",
     "static/js/787.f88b4d20.chunk.js": "/mosquito-game/static/js/787.f88b4d20.chunk.js",
     "static/media/mosquito.png": "/mosquito-game/static/media/mosquito.c8cac833fbda2f61d1a0.png",
     "static/media/mosquito-dead.png": "/mosquito-game/static/media/mosquito-dead.ff7406f64846289e814c.png",
     "static/media/blood splash.png": "/mosquito-game/static/media/blood splash.e38048aace5a17220584.png",
     "index.html": "/mosquito-game/index.html",
     "main.c225f113.css.map": "/mosquito-game/static/css/main.c225f113.css.map",
-    "main.93c390a2.js.map": "/mosquito-game/static/js/main.93c390a2.js.map",
+    "main.da290344.js.map": "/mosquito-game/static/js/main.da290344.js.map",
     "787.f88b4d20.chunk.js.map": "/mosquito-game/static/js/787.f88b4d20.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c225f113.css",
-    "static/js/main.93c390a2.js"
+    "static/js/main.da290344.js"
   ]
 }
