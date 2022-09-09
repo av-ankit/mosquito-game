@@ -31,7 +31,7 @@ function Game() {
       settop(topValue);
       setleft(leftValue);
       setshowHit(false);
-    }, 670);
+    }, 630);
 
     setTimeout(() => {
       clearTimeout(time);
